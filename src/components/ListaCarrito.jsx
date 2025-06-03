@@ -11,7 +11,7 @@ function ListaCarrito() {
     console.log(`Remover item: ${JSON.stringify(event)}`);
     const id = event.id;
       setData(prevData => prevData.map(item =>
-          item.id === id ? { ...item, status: 'un-selected' } : item
+          item.id === id ? { ...item, status: 'unselected' } : item
       ));
   }
 
